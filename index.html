@@ -18,18 +18,59 @@
 			font-weight: bold;
 			height: 30%;
 			padding: 3em;
+			padding-top: 1.2em;
+			padding-bottom: 1em;
 			font-size: 2.5em;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			color: black;
+			font-size: 1.75em;
 		}
 		#pick1 {
 			float: left;
 			width: 100%;
-			clear: left;
+			clear: both;
 			margin: auto;
 			text-align: center;
+			padding-bottom: 1.25em;
+		}
+		#pick2 {
+			float: left;
+			width: 50%;
+			clear: left;
+			margin: auto;
+			/*margin-right: 1em;*/
+			text-align: center;
+			position: relative;
+			left: 7%;
+		}
+		#pick3 {
+			float: left;
+			clear: right;
+			margin: auto;
+			width: 50%;
+			text-align: center;
+			position: relative;
+			right: 7%;
 		}
 		#img1 {
-			width: 25%;
+			height: 18em;
+			width: auto;
+			/*width: 25%;
+			height: auto;*/
+		}
+		#img2, #img3 {
+			/*width: 50%;
 			height: auto;
+			padding: ; *//* maybe change later? */
+			height: 12em;
+			width: auto;
+		}
+		.image {
+			border: 0.25em solid white;
+			background: linear-gradient(70deg, #fff9b5, #f1b5ff);
+			padding: 0.5em;
 		}
 
 	</style>
@@ -38,7 +79,9 @@
 <body>
 	<main>
 		<header>Joshboard's Top 15 Pic(k)s</header>
-		<a href="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" id="pick1"><img id="img1" src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="IU holding up peace signs"></a>
+		<a href="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" id="pick1" target="_blank">1<br><img id="img1" class="image" src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="IU holding up peace signs"></a>
+		<a href="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" id="pick2" target="_blank">2<br><img id="img2" class="image" src="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" alt="Twice chilling"></a>
+		<a href="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" target="_blank" id="pick3">3<br><img class="image" id="img3" src="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" alt="IZ*ONE group picture"></a>
 	</main>
 </body>
 </html>
