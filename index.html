@@ -112,6 +112,20 @@
 			font-size: 0.3em;
 			font-weight: 200;
 		}
+		.survey {
+			font-size: 1em;
+			font-weight: 700;
+			text-align: center;
+			float: left;
+			margin: auto;
+			width: 100%;
+			padding-top: 1.5em;
+
+		}
+		button {
+			background: #b5d0ff;
+			border-radius: 0.45em;
+		}
 		@media (min-width: 1000px) and (max-width: 1580px) {
 			main {
 				transform: scale(0.7);
@@ -124,14 +138,50 @@
 <body>
 	<main>
 		<header>Joshboard's Top 15 Pic(k)s<br><div id="click-fyi">Ps. you can click on the images for the sauce</div></header>
-		<a href="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" id="pick1" target="_blank">1<br><img id="img1" class="image" src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="IU holding up peace signs"><br><div class="who">IU</div></a>
-		<a href="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" id="pick2" target="_blank">2<br><img id="img2" class="image" src="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" alt="Twice chilling"><br><div class="who">Twice</div></a>
-		<a href="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" target="_blank" id="pick3">3<br><img class="image" id="img3" src="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" alt="IZ*ONE group picture"><div class="who">Iz*One</div></a>
-		<a href="https://data.whicdn.com/images/324729425/original.jpg" target="_blank" class="pick-others">4<br><img src="https://data.whicdn.com/images/324729425/original.jpg" alt="fromis-9 chilling" class="image image-others"><div class="who">Fromis_9</div></a>
-		<a href="iutest.jpg" target="_blank" class="pick-others">5<br><img src="iutest.jpg" alt="the classic iu picture" class="image image-others"><div class="who">IU</div></a>
-		<a href="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" target="_blank" class="pick-others">6<br><img src="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" alt="mikasa looking at comet" class="image image-others"><div class="who">Mikasa</div></a>
+		<blah id="pick1">
+			<a href="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" target="_blank">1<br><img id="img1" class="image" src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="IU holding up peace signs"><br><div class="who">IU</div></a>
+		</blah>
+		<blah id="pick2">
+			<a href="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" target="_blank">2<br><img id="img2" class="image" src="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" alt="Twice chilling"><br><div class="who">Twice</div></a>
+		</blah>
+		<blah id="pick3">
+			<a href="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" target="_blank">3<br><img class="image" id="img3" src="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" alt="IZ*ONE group picture"><div class="who">Iz*One</div></a>
+		</blah>
+		<blah class="pick-others">
+			<a href="https://data.whicdn.com/images/324729425/original.jpg" target="_blank">4<br><img src="https://data.whicdn.com/images/324729425/original.jpg" alt="fromis-9 chilling" class="image image-others"><div class="who">Fromis_9</div></a>
+		</blah>
+		<blah class="pick-others">
+			<a href="iutest.jpg" target="_blank">5<br><img src="iutest.jpg" alt="the classic iu picture" class="image image-others"><div class="who">IU</div></a>
+		</blah>
+		<blah class="pick-others">
+			<a href="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" target="_blank">6<br><img src="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" alt="mikasa looking at comet" class="image image-others"><div class="who">Mikasa</div></a>
+		</blah>
+		<form class="survey">
+			<div>Which person/group did you like the most?</div>
+			<label for="IU">
+				<input id="IU" type="radio" name="favourite" value="IU"> IU
+			</label>
+			<br>
+			<label for="twice">
+				<input id="twice" type="radio" name="favourite" value="twice"> Twice
+			</label>
+			<br>
+			<label for="izone">
+				<input id="izone" type="radio" name="favourite" value="izone"> Iz*One
+			</label>
+			<br>
+			<label for="fromis">
+				<input id="fromis" type="radio" name="favourite" value="fromis"> Fromis_9
+			</label>
+			<br>
+			<label for="mikasa">
+				<input id="mikasa" type="radio" name="favourite" value="mikasa"> Mikasa
+			</label>
+			<br>
+			<button type="submit">Submit</button>
+		</form>
 	</main>
-	<!-- <form>
-		<label for="" -->
+
+
 </body>
 </html>
