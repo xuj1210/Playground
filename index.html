@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Joshboard's Top Pic(k)s</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
 	<style>
 		body {
-			background: linear-gradient(70deg, #b5d0ff, #ffd4b5);
+			/*background: linear-gradient(70deg, #b5d0ff, #ffd4b5);*/
+			background: linear-gradient(215deg, #ffe6b5, #ffc1b5);
 			font-family: Roboto, sans-serif;
 
+		}
+		* {
+			cursor: default;
 		}
 		header {
 			width: 70%;
@@ -19,9 +24,10 @@
 			font-weight: bold;
 			height: 30%;
 			padding: 3em;
-			padding-top: 1.2em;
-			padding-bottom: 1em;
+			padding-top: 1em;
+			padding-bottom: 0.75em;
 			font-size: 2.5em;
+			font-family: Raleway, sans-serif;
 		}
 		a:link, a:visited {
 			text-decoration: none;
@@ -43,7 +49,7 @@
 		}
 		@keyframes enlarge {
 			100% {
-				transform: scale(1.1);
+				transform: scale(1.05);
 			}
 		}
 		#pick2 {
@@ -90,17 +96,25 @@
 			height: 12em;
 			width: auto;
 		}
+		.who {
+			font-size: 0.6em;
+			font-weight: bold;
+		}
 		.image {
 			border: 0.25em solid white;
-			background: linear-gradient(70deg, #fff9b5, #f1b5ff);
+			/*background: linear-gradient(70deg, #fff9b5, #f1b5ff);*/
+			background: linear-gradient(0deg, #FFFFFF, #b5d0ff, #b5d0ff);
 			padding: 0.5em;
 			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		}
+		#click-fyi {
+			font-size: 0.35em;
+			font-weight: 200;
 		}
 		@media (min-width: 1000px) and (max-width: 1580px) {
 			main {
 				transform: scale(0.7);
 			}
-
 		}
 
 	</style>
@@ -108,13 +122,15 @@
 
 <body>
 	<main>
-		<header>Joshboard's Top 15 Pic(k)s</header>
-		<a href="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" id="pick1" target="_blank">1<br><img id="img1" class="image" src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="IU holding up peace signs"></a>
-		<a href="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" id="pick2" target="_blank">2<br><img id="img2" class="image" src="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" alt="Twice chilling"></a>
-		<a href="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" target="_blank" id="pick3">3<br><img class="image" id="img3" src="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" alt="IZ*ONE group picture"></a>
-		<a href="https://data.whicdn.com/images/324729425/original.jpg" target="_blank" class="pick-others">4<br><img src="https://data.whicdn.com/images/324729425/original.jpg" alt="fromis-9 chilling" class="image image-others"></a>
-		<a href="iutest.jpg" target="_blank" class="pick-others">5<br><img src="iutest.jpg" alt="the classic iu picture" class="image image-others"></a>
-		<a href="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" target="_blank" class="pick-others">6<br><img src="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" alt="mikasa looking at comet" class="image image-others"></a>
+		<header>Joshboard's Top 15 Pic(k)s<br><div id="click-fyi">Ps. you can click on the images for the sauce</div></header>
+		<a href="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" id="pick1" target="_blank">1<br><img id="img1" class="image" src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="IU holding up peace signs"><br><div class="who">IU</div></a>
+		<a href="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" id="pick2" target="_blank">2<br><img id="img2" class="image" src="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" alt="Twice chilling"><br><div class="who">Twice</div></a>
+		<a href="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" target="_blank" id="pick3">3<br><img class="image" id="img3" src="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" alt="IZ*ONE group picture"><div class="who">Iz*One</div></a>
+		<a href="https://data.whicdn.com/images/324729425/original.jpg" target="_blank" class="pick-others">4<br><img src="https://data.whicdn.com/images/324729425/original.jpg" alt="fromis-9 chilling" class="image image-others"><div class="who">Fromis_9</div></a>
+		<a href="iutest.jpg" target="_blank" class="pick-others">5<br><img src="iutest.jpg" alt="the classic iu picture" class="image image-others"><div class="who">IU</div></a>
+		<a href="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" target="_blank" class="pick-others">6<br><img src="https://media2.fdncms.com/chicago/imager/u/original/26188308/b2a0423bed98d99f1ea38ceda757ffd5.jpg" alt="mikasa looking at comet" class="image image-others"><div class="who">Mikasa</div></a>
 	</main>
+	<!-- <form>
+		<label for="" -->
 </body>
 </html>
