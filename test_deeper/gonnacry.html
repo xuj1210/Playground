@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>gonna cry frfr</title>
+	<style>
+		body {
+			font-family: Calibri, sans-serif;
+		}
+		main {
+			font-size: 40px;
+			width: 100vh;
+			background: lightblue;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-gap: 5px;
+			grid-template-areas:
+			"first first"
+			"second third";
+		}
+		.first {
+			background: lavender;
+			grid-area: first;
+		}
+		.image {
+			height: 40vh;
+			width: auto;
+		}
+
+		.second {
+			grid-area: second;
+			background: skyblue;
+		}
+
+		.third {
+			grid-area: third;
+			background: orange;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<div class="first">
+			<img src="https://vmagazine.com/wp-content/uploads/2020/10/KMJ_7842-Group-6-V-Mag.jpg" class="image" alt="twice group photo">
+		</div>
+		<div class="second">b</div>
+		<div class="third">c</div>
+	</main>
+</body>
+</html>

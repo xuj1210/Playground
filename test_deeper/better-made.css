@@ -1,0 +1,13 @@
+body {
+	background: linear-gradient(180deg, #fdffd4, #ffebd4);
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	flex: 2 2 500px;
+}

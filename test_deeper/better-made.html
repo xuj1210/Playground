@@ -1,0 +1,132 @@
+<!DOCTYPE html
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>(Revised)Joshboard's Top Picks</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+	<!-- <link href="better-made.css" rel="stylesheet"> -->
+	<style>
+		body::-webkit-scrollbar {
+			display: none;
+		}
+		header {
+			font-family: Raleway, sans-serif;
+			font-size: 5vh;
+		}
+		body {
+			background: linear-gradient(180deg, #fdffd4, #ffebd4);
+			text-align: center;
+			font-family: Roboto, sans-serif;
+			font-weight: strong;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+		}
+		main {
+			display: grid;
+			width: 100vw;
+			grid-template-areas:
+			"first"
+			"second-third"
+			"fourth-sixth"
+			"seventh-ninth";
+			grid-template-columns: 85vw;
+			grid-template-rows: repeat(4, auto);
+			grid-gap: 1vw;
+			justify-content: center;
+			align-items: center;
+		}
+		.image {
+			border: 0.5vh solid gray;
+			background: linear-gradient(0deg, #FFFFFF, #FFFFFF, #ecd4ff);
+			padding: 1vh;
+			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+			border-radius: 0.3em;
+		}
+		.image:hover {
+			animation-name: enlarge;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes enlarge {
+			100% {
+				transform: scale(1.05);
+			}
+		}
+		.top {
+			grid-area: first;
+		}
+		.first-image {
+			width: 40vw;
+			height: auto;
+		}
+		.nonfirst {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		.secondthird {
+			grid-area: second-third;
+			justify-content: space-around;
+		}
+
+		.secondthird-image {
+			width: 30vw;
+		}
+		.fourthsixth {
+			grid-area: fourth-sixth;
+		}
+		.fourthsixth-image, .seventhninth-image {
+			width: 25vw;
+		}
+
+		.seventhninth {
+			grid-area: seventh-ninth;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		(better?) version of my top picks :D
+	</header> 
+	<main>
+		<div class="top">
+			<p>1<br>
+				<a href="../iutest.jpg" target="_blank">
+					<img src="../iutest.jpg" alt="iu goated picture" class="image first-image">
+				</a>
+				<br>
+				IU
+			</p>
+		</div>
+
+		<div class="secondthird nonfirst">
+			<p><strong>2</strong><br>
+				<img src="https://images-cdn.9gag.com/photo/az157LB_700b.jpg" alt="other iu" class="image secondthird-image">
+			</p>
+			<p>3<br>
+				<img src="https://i.pinimg.com/originals/d8/65/a0/d865a0392af28722e7959d64ec3ea81e.jpg" alt="izone" class="image secondthird-image">
+			</p>
+		</div>
+
+		<div class="fourthsixth nonfirst">
+			<img src="https://kpopkstyle.com/wp-content/uploads/2019/01/kpop-girls-band-twice-5-front-1024x576.jpg" alt="twice tt" class="image fourthsixth-image">
+			<img src="https://6.viki.io/image/eab14ed40f9f4244afa92900f196ccbc.jpeg?s=900x600&e=t" alt="twice" class="image fourthsixth-image">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_02.jpg" alt="twice again" class="image fourthsixth-image">
+		</div>
+
+		<div class="seventhninth nonfirst">
+			<img src="https://i.pinimg.com/originals/b4/a7/08/b4a708ab9e4ca701a3f0593866aa5d59.jpg" alt="twice" class="image seventhninth-image">
+			<img src="https://vmagazine.com/wp-content/uploads/2020/10/KMJ_7842-Group-6-V-Mag.jpg" alt="twice" class="image seventhninth-image">
+			<img src="https://data.whicdn.com/images/324729425/original.jpg" alt="fromis9" class="image seventhninth-image">
+		</div>
+
+
+	</main>
+</body>
+</html>
